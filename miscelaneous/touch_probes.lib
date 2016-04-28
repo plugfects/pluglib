@@ -1,0 +1,39 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# rotary
+#
+DEF rotary T 0 40 Y Y 1 F N
+F0 "T" -150 200 60 H V C CNN
+F1 "rotary" -100 -200 60 H V C CNN
+F2 "" 500 350 60 H V C CNN
+F3 "" 500 350 60 H V C CNN
+DRAW
+C 350 0 150 0 1 0 N
+C 350 0 300 0 1 0 N
+S -200 150 50 -150 0 1 0 N
+P 2 0 1 0  200 0  50 0 N
+P 2 0 1 0  350 -150  350 -300 N
+P 2 0 1 0  350 150  350 300 N
+P 2 0 1 0  500 0  650 0 N
+X probe 1 -400 100 200 R 50 50 1 1 I
+X probe 2 -400 0 200 R 50 50 1 1 I
+X probe 3 -400 -100 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# touchkey
+#
+DEF touchkey T 0 40 Y Y 1 F N
+F0 "T" 0 200 60 H V C CNN
+F1 "touchkey" 0 -200 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+C 0 0 50 0 1 0 N
+C 0 0 158 0 1 0 N
+X ~ ~ -350 0 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
